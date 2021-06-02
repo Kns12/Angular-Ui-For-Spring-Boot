@@ -1,0 +1,37 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>SURNAME</th>
+            <th>Email ID</th>
+            <th>Aadhar No</th>
+            <th>Passport No</th>
+            <th>Contact No</th>
+            <th>PinCode</th>
+            <th>Date Of Birth</th>
+            <th>Joining Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+     <tr *ngFor ="let nsftEmployee of nsftEmployees">
+            <td>{{nsftEmployee.id}}</td>
+            <td>{{nsftEmployee.name}}</td>
+            <td>{{nsftEmployee.surName}}</td>
+            <td>{{nsftEmployee.emailId}}</td>
+            <td>{{nsftEmployee.aadharNo}}</td>
+            <td>{{nsftEmployee.passportNo}}</td>
+            <td>{{nsftEmployee.contactNo}}</td>
+            <td>{{nsftEmployee.pinCode}}</td>
+            <td>{{nsftEmployee.dob}}</td>
+            <td>{{nsftEmployee.joiningDate}}</td>
+            <td>
+                <button (click)= "updateEmployee(nsftEmployee.id)" class= "btn btn-info">Update</button>
+                <button (click)= "deleteEmployee(nsftEmployee.id)" class= "btn btn-danger">Delete</button>
+            </td>
+        </tr>
+
+    </tbody>
+
+</table>

@@ -1,0 +1,49 @@
+<div class="col-md-6 offset-md-3">
+<h3>Create Employee</h3>
+<form (ngSubmit)= "onSubmit()" > 
+    <div class="form-group">
+        <label> Employee ID</label>
+        <input type="number" class="form-control" id="id" [(ngModel)]="employee.id" name="id">  
+    </div>
+<div class="form-group">
+    <label> Name</label>
+    <input type="text" class="form-control" id="name" [(ngModel)]="employee.name" name="name">  
+</div>
+<div class="form-group">
+    <label>SurName</label>
+    <input type="text" class="form-control" id="surName" [(ngModel)]="employee.surName" name="surName">  
+</div>
+<div class="form-group">
+    <label> Email Id</label>
+    <input type="text" class="form-control" id="emailId" [(ngModel)]="employee.emailId" name="emailId">  
+</div>
+<div class="form-group">
+    <label> Aadhar No</label>
+    <input type="text" class="form-control" id="aadharNo" [(ngModel)]="employee.aadharNo" name="aadharNo">  
+</div>
+<div class="form-group">
+    <label> Passport</label>
+    <input type="text" class="form-control" id="passportNo" [(ngModel)]="employee.passportNo" name="passportNo">  
+</div>
+<div class="form-group">
+    <label> Contact No</label>
+    <input type="text" class="form-control" id="contactNo" [(ngModel)]="employee.contactNo" name="contactNo">  
+</div>
+
+<div class="form-group">
+    <label> PinCode</label>
+    <input type="text" class="form-control" id="pinCode" [(ngModel)]="employee.pinCode" name="pinCode">  
+</div>
+<div class="form-group">
+    <label> DOB</label>
+    <input type="date" class="form-control" id="dob" [(ngModel)]="employee.dob" name="dob">
+      
+</div>
+<div class="form-group">
+    <label> Joining Date</label>
+    <input type="date" class="form-control" id="joiningDate" [(ngModel)]="employee.joiningDate" name="joiningDate">  
+</div>
+
+<button class="btn btn-success" type="submit">Submit</button>
+</form>
+</div>
